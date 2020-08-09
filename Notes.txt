@@ -5,3 +5,4 @@ https://bitbucket.org/codingacademy/instagram-with-bootstrap/
 ¿aria-hidden?
 
 
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_dynamic&stacked=h
