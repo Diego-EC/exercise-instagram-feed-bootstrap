@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Document</title>
+    <title>Instagram Feed Bootstrap</title>
 </head>
 <body>
     <!-- Ghost navbar: used to move all the content below the good one. -->
@@ -60,29 +60,73 @@
         <div class="col-12 d-flex justify-content-center">
             <ul class="nav nav-pills nav-justified custom">
                 <li>
-                    <a href="#knowing_us" data-toggle="pill">
+                    <a href="#grid-layout" data-toggle="pill">
                         <!--<i class="fas fa-th"></i>-->
-                        <button type="button" class="btn btn-primary">lol</button>
+                        <button type="button" class="btn btn-primary">grid</button>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="#knowing_us2" data-toggle="pill">
+                    <a href="#column-layout" data-toggle="pill">
                         <!--<i class="fas fa-square"></i>-->
-                        <button type="button" class="btn btn-secondary">lal</button>
+                        <button type="button" class="btn btn-secondary">column</button>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="tab-content">
-            <div id="knowing_us" class="tab-pane active in">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- 3x3 images  -->
+            <div id="grid-layout" class="tab-pane active in">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="">
+                            <img class="img-fluid" src="/src/img/1.jpg" alt="img 1">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="">
+                            <img class="img-fluid h-auto w-auto" src="/src/img/2.jpg" alt="img 2">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="knowing_us2" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <!-- column -->
+            <div id="column-layout" class="tab-pane fade">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8">
+                        <div class="card mt-3 mb-5">
+                            <div class="card-header bg-white "> My first photo          12/14 </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="">
+                                    <img class="w-100" src="/src/img/1.jpg"  alt="img 1">
+                                </div>
+                                <div class="card-title">23 Likes</div>
+                                <p class="card-text">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                            <div class="card-footer"> footer </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header"> header </div>
+                            <div class="card-body pl-0 pr-0">
+                                <img class="img-fluid w-100" src="/src/img/2.jpg"  alt="img 2">
+                                <div class="card-title">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer"> footer </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header"> header </div>
+                            <div class="card-body pl-0 pr-0">
+                                <img class="img-fluid w-100" src="/src/img/4.jpg"  alt="img 4">
+                                <div class="card-title">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-footer"> footer </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

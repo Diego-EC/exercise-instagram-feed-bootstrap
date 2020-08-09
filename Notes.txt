@@ -6,3 +6,72 @@ https://bitbucket.org/codingacademy/instagram-with-bootstrap/
 
 
 https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_dynamic&stacked=h
+
+
+
+img-fluid. max-width: 100%; and height: auto
+
+
+-> bootstrap cards
+https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
+
+
+
+
+<div class="card-group">
+  <div class="card bg-primary">
+    <div class="card-body text-center">
+      <img src="/src/img/1.jpg" class="card-fluid" alt="img 1">
+    </div>
+  </div>
+  <div class="card bg-warning">
+    <div class="card-body text-center">
+      <img src="/src/img/2.jpg" class="card-img-top" alt="img 1">
+    </div>
+  </div>
+  <div class="card bg-success">
+    <div class="card-body text-center">
+      <img src="/src/img/4.jpg" class="card-img-top" alt="img 1">
+    </div>
+  </div>
+  <div class="card bg-danger">
+    <div class="card-body text-center">
+      <p class="card-text">Some text inside the fourth card</p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <p class="card-text">Some text inside the fifth card</p>
+    </div>
+  </div>
+  <div class="card bg-info">
+    <div class="card-body text-center">
+      <p class="card-text">Some text inside the sixth card</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/src/img/1.jpg" class="card-img" alt="img 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/src/img/2.jpg" class="card-img-top" alt="img 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                        <video class="img-fluid" playsinline autoplay muted loop>
+                        <source src="src/vid/3.mp4" type="video/mp4">
+                        </video>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="/src/img/4.jpg" class="card-img-top" alt="img 4">
+                        </div>
+                    </div>
+                </div>
