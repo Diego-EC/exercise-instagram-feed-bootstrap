@@ -15,21 +15,24 @@
     </nav>
 
     <!-- fixed navbar -->
-    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-sm">
         <div class="container">
             <a class="navbar-brand">
                     <i class="fab fa-instagram"></i>
                     Instagram
             </a>
 
+            <!-- Toggle the visibility of content -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="site-menu">
+            <div class="collapse navbar-collapse" id="site-menu"> <!-- for grouping and hiding navbar contents by a parent breakpoint -->
                 <form class="form-inline ml-auto"> <!-- ml-auto: so that it is positioned to the right -->
-                    <button class="btn btn-success" type="submit">Create a new post</button>
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-success" data-toggle="modal" data-target="#new-post-modal" type="button" >Create a new post</button>
 
+                    <!-- dropdown menu -->
                     <div class="dropdown nav-item">
                         <a class="nav-link dropdown-toggle text-secondary" href="#" id="site-menu-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-cog" aria-hidden="true"></i>
@@ -47,10 +50,8 @@
         </div>
     </nav>
 
-<!--
 
--->
-
+    <!-- site content -->
     <div class="container">
         <nav class="nav">
             <div><p> second nav </p></div>
@@ -59,6 +60,29 @@
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
+    </div>
+
+    <!---- functionalities ---->
+
+    <!-- Modal -->
+    <div class="modal fade" id="new-post-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <textarea class="form-control m-2 border-secondary"></textarea>
+                        <div class="m-2">
+                            <button class="btn btn-outline-secondary text-dark mr-1" type="button"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                            <button class="btn btn-outline-secondary text-dark" type="button"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
