@@ -6,59 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-default mb-5">
-</nav>
-<nav class="navbar navbar-light bg-light fixed-top">
-  <a class="navbar-brand" href="#">Fixed top</a>
-</nav>
+    <!-- Ghost navbar: used to move all the content below the good one. -->
+    <nav class="navbar navbar-default mb-5">
+    </nav>
 
-
-
-<!--
-    <nav class="navbar navbar-light bg-light">
+    <!-- fixed navbar -->
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
         <div class="container">
             <a class="navbar-brand">
-                    <span class="glyphicon glyphicon-camera" aria-hidden="true">
+                    <i class="fab fa-instagram"></i>
                     Instagram
             </a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="site-menu">
+                <form class="form-inline ml-auto"> <!-- ml-auto: so that it is positioned to the right -->
+                    <button class="btn btn-success" type="submit">Create a new post</button>
+
+                    <div class="dropdown nav-item">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="site-menu-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="site-menu-dropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </nav>
--->
 
 <!--
 
 -->
 
-
     <div class="container">
-        <!--<p class="mt-0">ghost 1</p>
-        <p class="mt-0">ghost 2</p>-->
         <nav class="nav">
             <div><p> second nav </p></div>
         </nav>
-        <!--<nav class="nav">
-            <div><p>lol</p></div>
-        </nav>
-        <nav class="nav">
-            <div><p>lol</p></div>
-        </nav>-->
         <section class="jumbotron"></section>
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
         <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
     </div>
-
-
-
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
