@@ -15,7 +15,7 @@
     </nav>
 
     <!-- fixed navbar -->
-    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-sm">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
         <div class="container">
             <a class="navbar-brand">
                     <i class="fab fa-instagram"></i>
@@ -23,7 +23,7 @@
             </a>
 
             <!-- Toggle the visibility of content -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -53,88 +53,256 @@
     <!---- site main content ---->
     <div class="container">
 
-
-
         <!-- second nav -->
         <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_dynamic&stacked=h -->
         <div class="col-12 d-flex justify-content-center">
-            <ul class="nav nav-pills nav-justified custom">
+            <ul class="nav nav-pills nav-justified  mb-1">
                 <li>
                     <a href="#grid-layout" data-toggle="pill">
                         <!--<i class="fas fa-th"></i>-->
-                        <button type="button" class="btn btn-primary">grid</button>
+                        <button type="button" class="btn btn-secondary m-1"><i class="fas fa-th"></i></button>
                     </a>
                 </li>
                 <li class="active">
                     <a href="#column-layout" data-toggle="pill">
                         <!--<i class="fas fa-square"></i>-->
-                        <button type="button" class="btn btn-secondary">column</button>
+                        <button type="button" class="btn btn-secondary m-1"><i class="fas fa-square"></i></button>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="tab-content">
             <!-- 3x3 images  -->
-            <div id="grid-layout" class="tab-pane active in">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="">
-                            <img class="img-fluid" src="/src/img/1.jpg" alt="img 1">
+            <div id="grid-layout" class="tab-pane  active in">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/1.jpg" alt="img 1">
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/2.jpg" alt="img 2">
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <video class="mw-100" playsinline autoplay muted loop>
+                                <source src="/src/vid/3.mp4" type="video/mp4">
+                            </video>                        
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="">
-                            <img class="img-fluid h-auto w-auto" src="/src/img/2.jpg" alt="img 2">
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/4.jpg" alt="img 4">
                         </div>
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/5.jpg" alt="img 5">
+                        </div>
+                        <video class="img-fluid col-md-4 p-0" playsinline autoplay muted loop>
+                            <source src="/src/vid/6.mp4" type="video/mp4">
+                        </video>    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/7.jpg" alt="img 7">
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/8.jpg" alt="img 8">
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <img class="mw-100" src="/src/img/9.jpg" alt="img 9">
+                        </div>    
                     </div>
                 </div>
             </div>
 
             <!-- column -->
             <div id="column-layout" class="tab-pane fade">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-8">
-                        <div class="card mt-3 mb-5">
-                            <div class="card-header bg-white "> My first photo          12/14 </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="">
-                                    <img class="w-100" src="/src/img/1.jpg"  alt="img 1">
+                <div class="row bg-secondary d-flex justify-content-center">
+                        <div class="col-8">
+                            <!-- card 1 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
                                 </div>
-                                <div class="card-title">23 Likes</div>
-                                <p class="card-text">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <div class="">
+                                        <img class="w-100" src="/src/img/1.jpg"  alt="img 1">
+                                    </div>
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer"> footer </div>
-                        </div>
 
-                        <div class="card">
-                            <div class="card-header"> header </div>
-                            <div class="card-body pl-0 pr-0">
-                                <img class="img-fluid w-100" src="/src/img/2.jpg"  alt="img 2">
-                                <div class="card-title">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- card 2 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/2.jpg"  alt="img 2">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer"> footer </div>
-                        </div>
 
-                        <div class="card">
-                            <div class="card-header"> header </div>
-                            <div class="card-body pl-0 pr-0">
-                                <img class="img-fluid w-100" src="/src/img/4.jpg"  alt="img 4">
-                                <div class="card-title">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!-- card 3 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                <div class="d-flex justify-content-center">
+                                    <video class="img-fluid " playsinline autoplay muted loop>
+                                        <source src="/src/vid/3.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer"> footer </div>
+
+                            <!-- card 4 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/4.jpg"  alt="img 4">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 5 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/5.jpg"  alt="img 5">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 6 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                <div class="d-flex justify-content-center">
+                                    <video class="img-fluid " playsinline autoplay muted loop>
+                                        <source src="/src/vid/6.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 7 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/7.jpg"  alt="img 7">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- card 8 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/8.jpg"  alt="img 8">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- card 9 -->
+                            <div class="card mt-3 mb-5">
+                                <div class="card-text m-2 bg-white d-flex justify-content-between">
+                                    <p class="h3 font-weight-normal">My first photo</p><p class="h3 font-weight-normal">12/14</p>
+                                </div>
+                                <div class="card-body pl-0 pr-0 ">
+                                    <img class="w-100" src="/src/img/9.jpg"  alt="img 9">
+                                    <div class="card-text m-2">23 Likes</div>
+                                    <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                                </div>
+                                <div class="card-footer bg-white border-top-0">
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-heart"></i></div>
+                                        <div class="col-10"><span>Comment...</span></div>
+                                        <div class="col-1"><i class="fas fa-ellipsis-v"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-
-        <section class="jumbotron"></section>
-
-        <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
-        <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
-        <p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse sint ea itaque magni quae aut ex autem, ratione, facilis eveniet! Asperiores ipsam quis dolores commodi illo, tenetur ut illum?</p>
     </div>
     <!---- functionalities ---->
 
