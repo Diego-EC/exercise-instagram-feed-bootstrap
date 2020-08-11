@@ -1,7 +1,21 @@
 
 -> Dudas
+¿tamaño celdas se puede ajustar solo con bootstrap?
+¿los position no siempre me funcionan? ¿como declaro un 'display: flex' en bootstrap? 
+    d-flex 
 ¿aria-hidden?
+    para ciegos
 ¿no hay padding a todos los hijos a la vez?
+    NO
+    div > p {}
+
+¿tiene sentido tener más de un container?
+    si
+¿que son los spacers? ¿puedo cambiar su valor? https://getbootstrap.com/docs/4.5/utilities/spacing/
+    Mejor no, combinar con CSS
+
+
+- col fuera de row no sirve de nada, no funciona.
 
 
 -> bootstrap Dynamic Pills
@@ -14,3 +28,15 @@ img-fluid. max-width: 100%; and height: auto
 -> bootstrap cards
 https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 
+
+
+/**/
+CSS
+no-pad
+post-img
+
+background: url(images/1.jpg);background-position: center center;background-repeat: no-repeat;background-size:100%;
+
+
+
+style="background: url(images/1.jpg);background-position: center center;background-repeat: no-repeat;background-size:100%;">

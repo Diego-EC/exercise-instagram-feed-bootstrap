@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Instagram Feed Bootstrap</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
 
         <!-- second nav -->
         <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_dynamic&stacked=h -->
-        <div class="col-12 d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
             <ul class="nav nav-pills nav-justified  mb-1">
                 <li>
                     <a href="#grid-layout" data-toggle="pill">
@@ -76,17 +77,31 @@
             <div id="grid-layout" class="tab-pane  active in">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/1.jpg" alt="img 1">
+                        <div class="col-4 card-img lol" style="background-image: url(/src/img/1.jpg);"></div>
+                        <div class="col-4 card-img lol" style="background-image: url(/src/img/2.jpg);"></div>
+                        <!--<div class="col-4 lol ">
+                            <video class="" playsinline autoplay muted loop>
+                                <source src="/src/vid/6.mp4" type="video/mp4">
+                            </video>  
+                        </div>-->
+
+<div class=" col-4 lol video-container">
+    <video autoplay muted loop>
+        <source src="./src/vid/6.mp4" type="video/mp4" />
+    </video>
+    <h2>Your caption here</h2>
+</div>
+
+                        <!--<div class="col-4 lol" style="background-image: url(/src/img/4.jpg);"></div>-->
+                        <!--<div class="col-md-4 p-0">
+                            <img class="card-img" src="/src/img/1.jpg" alt="img 1">
                         </div>
                         <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/2.jpg" alt="img 2">
+                            <img class="card-img" src="/src/img/2.jpg" alt="img 2">
                         </div>
                         <div class="col-md-4 p-0">
-                            <video class="mw-100" playsinline autoplay muted loop>
-                                <source src="/src/vid/3.mp4" type="video/mp4">
-                            </video>                        
-                        </div>
+                            <img class="card-img" src="/src/img/4.jpg" alt="img 4">
+                        </div>-->
                     </div>
                     <div class="row">
                         <div class="col-md-4 p-0">
@@ -96,7 +111,7 @@
                             <img class="mw-100" src="/src/img/5.jpg" alt="img 5">
                         </div>
                         <video class="img-fluid col-md-4 p-0" playsinline autoplay muted loop>
-                            <source src="/src/vid/6.mp4" type="video/mp4">
+                            <!--<source src="/src/vid/3.mp4" type="video/mp4">-->
                         </video>    
                     </div>
                     <div class="row">

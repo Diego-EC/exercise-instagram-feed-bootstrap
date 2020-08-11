@@ -1,0 +1,49 @@
+.card-img{
+    /*background: url(images/1.jpg);*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size:100%;*/
+    background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+
+}
+
+.lol{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.m-vid { 
+   
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+      
+  z-index: -100;
+    
+  background-size: cover;
+
+}
+
+
+.video-container {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
