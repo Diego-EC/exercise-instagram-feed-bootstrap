@@ -1,63 +1,74 @@
-.card-img{
-    /*background: url(images/1.jpg);*/
+
+/* centra la imagen */
+.centered-img{
     background-position: center center;
     background-repeat: no-repeat;
-    /*background-size:100%;*/
     background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 
 }
 
-.lol{
+/* centra el video */
+.centered-vid{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+
+}
+
+/* da tamaño */
+.visual-content-container{
     width: 400px;
     height: 300px;
     border: 1px solid white;
 }
 
-.m-vid { 
-   
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-
-  position: fixed;    
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); 
-      
-  z-index: -100;
-    
-  background-size: cover;
-
-}
-
-
-.video-container {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    /*display: flex;
-    justify-content: center;*/
-}
-
-/*
-video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-*/
-
-.cucu{
-    margin:0 ! important;
-}
-
+/* container sin bordes */
 .alt-grid .container {
     width:100%;
     max-width:none;
     padding:0;
+}
+
+/* color gris claro */
+.my-bgcolor{
+    background-color: #e6e7e6
+}
+
+
+/* one col */
+.my-card{
+    max-height: 595px;
+}
+
+.my-card-img{
+    height: 400px;
+}
+
+.my-card-vid{
+    height: 400px;
+}
+
+/* font size */ 
+.alt-grid { font-size: 1rem; }
+.my-card-title{ font-size: 1.5rem; }
+
+@media (min-width: 1px){
+    .alt-grid {font-size: 0.5rem;}
+    .my-card-title{ font-size: 0.75rem; }
+}
+@media (min-width: 576px) {
+    .alt-grid { font-size: 0.5rem; }
+    .my-card-title{ font-size: 1rem; }
+}
+@media (min-width: 768px) {
+    .alt-grid { font-size: 0.5rem; }
+    .my-card-title{ font-size: 1rem; }
+}
+@media (min-width: 992px) {
+    .alt-grid { font-size: 0.75rem; }
+    .my-card-title{ font-size: 1.25rem; }
+}
+@media (min-width: 1200px) {
+    .alt-grid { font-size: 1rem; }
+    .my-card-title{ font-size: 1.5rem; }
 }
