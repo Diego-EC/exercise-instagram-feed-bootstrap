@@ -9,8 +9,8 @@
 
 .lol{
     width: 400px;
-    height: 200px;
-    border: 1px solid black;
+    height: 300px;
+    border: 1px solid white;
 }
 
 .m-vid { 
@@ -34,11 +34,14 @@
 
 .video-container {
     width: 400px;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     position: relative;
+    /*display: flex;
+    justify-content: center;*/
 }
 
+/*
 video {
   min-width: 100%;
   min-height: 100%;
@@ -46,4 +49,15 @@ video {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+*/
+
+.cucu{
+    margin:0 ! important;
+}
+
+.alt-grid .container {
+    width:100%;
+    max-width:none;
+    padding:0;
 }

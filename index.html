@@ -51,7 +51,8 @@
         </div>
     </nav>
 
-    <!---- site main content ---->
+    <!---- site main content alt-grid ---->
+    <div class="alt-grid">
     <div class="container">
 
         <!-- second nav -->
@@ -72,58 +73,32 @@
                 </li>
             </ul>
         </div>
-        <div class="tab-content">
+        <div class="tab-content ">
             <!-- 3x3 images  -->
             <div id="grid-layout" class="tab-pane  active in">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4 card-img lol" style="background-image: url(/src/img/1.jpg);"></div>
-                        <div class="col-4 card-img lol" style="background-image: url(/src/img/2.jpg);"></div>
-                        <!--<div class="col-4 lol ">
-                            <video class="" playsinline autoplay muted loop>
-                                <source src="/src/vid/6.mp4" type="video/mp4">
-                            </video>  
-                        </div>-->
-
-<div class=" col-4 lol video-container">
-    <video autoplay muted loop>
-        <source src="./src/vid/6.mp4" type="video/mp4" />
-    </video>
-    <h2>Your caption here</h2>
-</div>
-
-                        <!--<div class="col-4 lol" style="background-image: url(/src/img/4.jpg);"></div>-->
-                        <!--<div class="col-md-4 p-0">
-                            <img class="card-img" src="/src/img/1.jpg" alt="img 1">
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/1.jpg);"></div>
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/2.jpg);"></div>
+                        <div class=" col-4 video-container d-flex justify-content-center">
+                            <video autoplay muted loop>
+                                <source src="./src/vid/3.mp4" type="video/mp4" />
+                            </video>
                         </div>
-                        <div class="col-md-4 p-0">
-                            <img class="card-img" src="/src/img/2.jpg" alt="img 2">
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <img class="card-img" src="/src/img/4.jpg" alt="img 4">
-                        </div>-->
                     </div>
                     <div class="row">
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/4.jpg" alt="img 4">
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/5.jpg" alt="img 5">
-                        </div>
-                        <video class="img-fluid col-md-4 p-0" playsinline autoplay muted loop>
-                            <!--<source src="/src/vid/3.mp4" type="video/mp4">-->
-                        </video>    
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/4.jpg);"></div>
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/5.jpg);"></div>
+                        <div class=" col-4 lol video-container d-flex justify-content-center">
+                            <video autoplay muted loop>
+                                <source src="./src/vid/6.mp4" type="video/mp4" />
+                            </video>
+                        </div> 
                     </div>
                     <div class="row">
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/7.jpg" alt="img 7">
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/8.jpg" alt="img 8">
-                        </div>
-                        <div class="col-md-4 p-0">
-                            <img class="mw-100" src="/src/img/9.jpg" alt="img 9">
-                        </div>    
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/7.jpg);"></div> 
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/8.jpg);"></div> 
+                        <div class="col-4 card-img lol" style="background-image: url(./src/img/9.jpg);"></div> 
                     </div>
                 </div>
             </div>
@@ -341,6 +316,7 @@
             </div>
         </div>
     </div>
+    </div> <!-- alt-grid -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
