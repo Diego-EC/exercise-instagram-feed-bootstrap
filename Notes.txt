@@ -40,3 +40,8 @@ background: url(images/1.jpg);background-position: center center;background-repe
 
 
 style="background: url(images/1.jpg);background-position: center center;background-repeat: no-repeat;background-size:100%;">
+
+
+
+
+https://getbootstrap.com/docs/4.5/components/navs/#fill-and-justify

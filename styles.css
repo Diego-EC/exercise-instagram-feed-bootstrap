@@ -72,3 +72,17 @@
     .alt-grid { font-size: 1rem; }
     .my-card-title{ font-size: 1.5rem; }
 }
+
+/* https://stackoverflow.com/questions/48927089/bootstrap-4-change-color-of-nav-pill-active */
+/* https://www.codeply.com/go/WJdJv71mhX/bootstrap-4-tab-pills-with-custom-color */
+/* not active */
+.nav-pills .my-pill-color .nav-link:not(.active) {
+    background-color: white;
+    color: grey;
+}
+/* active (faded) */
+.nav-pills .my-pill-color .nav-link {
+    background-color: grey;
+    color: white;
+}
+
