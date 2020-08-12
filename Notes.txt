@@ -1,47 +1,32 @@
+# Notas
 
--> Dudas
-¿tamaño celdas se puede ajustar solo con bootstrap?
-¿los position no siempre me funcionan? ¿como declaro un 'display: flex' en bootstrap? 
-    d-flex 
-¿aria-hidden?
-    para ciegos
-¿no hay padding a todos los hijos a la vez?
+## Dudas (Resueltas)
+1. ¿tamaño celdas se puede ajustar solo con bootstrap?
     NO
-    div > p {}
-
-¿tiene sentido tener más de un container?
+2. ¿los position no siempre me funcionan? ¿como declaro un 'display: flex' en bootstrap? 
+    d-flex 
+3. ¿aria-hidden?
+    para ciegos
+4. ¿no hay padding a todos los hijos a la vez?
+    NO, hay que usar CSS
+    
+5. ¿tiene sentido tener más de un container?
     si
-¿que son los spacers? ¿puedo cambiar su valor? https://getbootstrap.com/docs/4.5/utilities/spacing/
+6. ¿que son los spacers? ¿puedo cambiar su valor? https://getbootstrap.com/docs/4.5/utilities/spacing/
     Mejor no, combinar con CSS
 
 
-- col fuera de row no sirve de nada, no funciona.
+## Documentación
 
-
--> bootstrap Dynamic Pills
+1. bootstrap Dynamic Pills
 https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_dynamic&stacked=h
 
-
-img-fluid. max-width: 100%; and height: auto
-
-
--> bootstrap cards
+2. bootstrap cards
 https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 
+3. How to solve the bootstrap height problem
+https://medium.com/wdstack/varying-column-heights-in-bootstrap-4e8dd5338643
 
-
-/**/
-CSS
-no-pad
-post-img
-
-background: url(images/1.jpg);background-position: center center;background-repeat: no-repeat;background-size:100%;
-
-
-
-style="background: url(images/1.jpg);background-position: center center;background-repeat: no-repeat;background-size:100%;">
-
-
-
-
-https://getbootstrap.com/docs/4.5/components/navs/#fill-and-justify
+## Comentarios:
+1. col fuera de row no sirve de nada, no funciona.
+2. img-fluid. => max-width: 100%; and height: auto
